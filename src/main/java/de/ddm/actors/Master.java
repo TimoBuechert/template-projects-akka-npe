@@ -70,8 +70,7 @@ public class Master extends AbstractBehavior<Master.Message> {
 	}
 
 	private Behavior<Message> handle(StartMessage message) {
-		this.dependencyMiner.tell(new DependencyMiner.StartMessage());
-		return this;
+		throw new NullPointerException();
 	}
 
 	private Behavior<Message> handle(ShutdownMessage message) {
